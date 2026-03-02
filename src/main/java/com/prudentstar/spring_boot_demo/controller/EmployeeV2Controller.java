@@ -42,4 +42,9 @@ public class EmployeeV2Controller {
         return  employeeService.update(employee, id);
     }
 
+    @PutMapping("/{id}")
+    public Employee update(@RequestBody Employee employee, @PathVariable String id){
+        return  employeeService.update(employee, id);
+    }
+
 }
